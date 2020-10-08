@@ -11,8 +11,8 @@
 # 필요한 세팅
 
 Flutter
-
-pubspec.yaml
+```
+- pubspec.yaml
 
 path: ^1.7.0
 camera: ^0.5.8+7
@@ -20,20 +20,28 @@ path_provider: ^1.6.18
 gallery_saver: ^2.0.1
 image_picker: ^0.6.7+11
 
+```
+
+
 
 Android
-android/build.gradle
-minSdkVersion 21 > 최소 21
+```
+- android/build.gradle
+minSdkVersion 21 // 최소 21
 
-android/app/src/main/androidManifest.xml
-내부 저장소 쓰기 권한 
+- android/app/src/main/androidManifest.xml
+// 내부 저장소 쓰기 권한을 위해 퍼미션 추가 
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
+```
 
 
 IOS
-ios/Runner/Info.plist
+```
+- ios/Runner/Info.plist
 <key>NSCameraUsageDescription</key>
     <string>Explanation on why the camera access is needed.</string>
 <key>NSPhotoLibraryUsageDescription</key>
     <string>This app requires access to the photo library.</string>
+    
+```
